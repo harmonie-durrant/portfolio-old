@@ -63,7 +63,7 @@ export default function Home() {
                     animate={{ y: 0 }}
                     transition={{ duration: 2 }}
                 >
-                    <a href='/#about'>
+                    <a href='#about'>
                         <ArrowDownward className="text-primary-content text-6xl font-extrabold mb-8" />
                     </a>
                 </motion.div>
@@ -84,18 +84,6 @@ export default function Home() {
                             projects.map((project, index) => {
                                 return(
                                     <>
-                                    {/* <div className="card w-80 tablet:w-96 bg-base-100 shadow-xl image-full">
-                                        <figure><img src={project.image} alt={project.name} /></figure>
-                                        <div className="card-body">
-                                            <h2 className="card-title">{project.title}</h2>
-                                            <p>{project.description}</p>
-                                            <div className="card-actions justify-end">
-                                                <a href={`/project/${project.name}`}>
-                                                    <button className="btn btn-primary">See Project</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> */}
                                     <div className="card bg-base-100 shadow-xl">
                                         <figure><img src={project.image} alt={project.name} /></figure>
                                         <div className="card-body">

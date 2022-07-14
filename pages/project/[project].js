@@ -1,12 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import useRouter from 'next/router';
 import { getProjectByName } from '../api/projects/[name]';
 import Link from 'next/link';
 
 export default function project() {
+    
     const router = useRouter();
-    const project = getProjectByName(router.query.project);
+    const project = getProjectByName(router.query.name);
 
     if(!project) {
         return (<></>)
@@ -28,7 +29,7 @@ export default function project() {
                         {
                             project.links.map((link, index) => {
                                 return (
-                                    <Link href={link.url}>
+                                    <Link key={index} href={link.url}>
                                         <a className="btn btn-primary mr-4">
                                             {link.name}
                                         </a>
