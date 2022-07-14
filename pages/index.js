@@ -52,7 +52,7 @@ export default function Home() {
                                     <a href='/#projects'><button className="btn btn-secondary mr-4">
                                         See projects
                                     </button></a>
-                                    <label for="contact-modal" class="btn btn-secondary mr-4 modal-button">Contact Me</label>
+                                    <label for="contact-modal" className="btn btn-secondary mr-4 modal-button">Contact Me</label>
                                 </div>
                             </motion.div>
                         </div>
@@ -96,12 +96,12 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </div> */}
-                                    <div class="card bg-base-100 shadow-xl">
+                                    <div className="card bg-base-100 shadow-xl">
                                         <figure><img src={project.image} alt={project.name} /></figure>
-                                        <div class="card-body">
-                                            <h2 class="card-title">{project.title}</h2>
+                                        <div className="card-body">
+                                            <h2 className="card-title">{project.title}</h2>
                                             <p>{project.description}</p>
-                                            <div class="card-actions justify-end">
+                                            <div className="card-actions justify-end">
                                                 <a href={project.live}>
                                                     <button className="btn btn-primary">See Project</button>
                                                 </a>
@@ -119,12 +119,12 @@ export default function Home() {
             </div>
 
             {/* Modal(s) */}
-            <input type="checkbox" id="contact-modal" class="modal-toggle" />
-            <div class="modal">
-                <div class="modal-box text-center w-full">
-                    <h3 class="font-bold text-xl">Contact me</h3>
-                    <a class="pt-4" href="mailto:r.bryenton2003@gmail.com"><Email /> r.bryenton2003@gmail.com</a>
-                    <p class="pb-8"><Phone /> +33 (0) 6 15 07 78 59</p>
+            <input type="checkbox" id="contact-modal" className="modal-toggle" />
+            <div className="modal">
+                <div className="modal-box text-center w-full">
+                    <h3 className="font-bold text-xl">Contact me</h3>
+                    <a className="pt-4" href="mailto:r.bryenton2003@gmail.com"><Email /> r.bryenton2003@gmail.com</a>
+                    <p className="pb-8"><Phone /> +33 (0) 6 15 07 78 59</p>
                     <div className="flex justify-center items-center">
                         <a target="_blank" href="https://github.com/reuban-bryenton" rel="noopener noreferrer">
                             <GitHub className="h-8 w-auto mx-2" />
@@ -136,8 +136,8 @@ export default function Home() {
                             <LinkIcon className="h-8 w-auto mx-2" />
                         </a>
                     </div>
-                    <div class="modal-action">
-                        <label for="contact-modal" class="btn">Close</label>
+                    <div className="modal-action">
+                        <label for="contact-modal" className="btn">Close</label>
                     </div>
                 </div>
             </div>
