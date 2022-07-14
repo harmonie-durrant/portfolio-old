@@ -46,8 +46,8 @@ export default function MyApp({ Component, pageProps }) {
                         <h1 className='font-title text-3xl font-bold'>Reuban Bryenton</h1>
                     </div>
                     {/*  DRAWER CONTENT */}
-                    <li><a href="/#about">About</a></li>
-                    <li><a href="/#projects">Projects</a></li>                
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>                
                     <div className="flex justify-center items-center mt-12">
                         <a target="_blank" href="https://github.com/reuban-bryenton" rel="noopener noreferrer">
                             <GitHub className="h-8 w-auto mx-2" />

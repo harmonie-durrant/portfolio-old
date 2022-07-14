@@ -46,10 +46,10 @@ export default function Home() {
                                     Software Engineer
                                 </h2>
                                 <div className="mt-8">
-                                    <a href='/#about'><button className="btn btn-secondary mr-4">
+                                    <a href='#about'><button className="btn btn-secondary mr-4">
                                         About Me
                                     </button></a>
-                                    <a href='/#projects'><button className="btn btn-secondary mr-4">
+                                    <a href='#projects'><button className="btn btn-secondary mr-4">
                                         See projects
                                     </button></a>
                                     <label for="contact-modal" className="btn btn-secondary mr-4 modal-button">Contact Me</label>
