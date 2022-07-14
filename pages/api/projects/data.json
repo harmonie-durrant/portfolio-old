@@ -14,7 +14,6 @@
         "image": "/projectImages/ash-aldeburgh.png",
         "tech": ["NextJS (React)", "MongoDB", "NodeJS (yarn)", "Tailwind (CSS)"],
         "description": "A site I made a site for my GrandFather using NextJS and Tailwind CSS. It's a site for a fish smoking company.",
-        "github": "https://github.com/reuban-bryenton?tab=repositories",
         "live": "https://www.ashsmokedfishes.co.uk/"
     }
 ]

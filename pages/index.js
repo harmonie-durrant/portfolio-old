@@ -25,7 +25,7 @@ export default function Home() {
         <>
             <Head>
                 <title>Reuban Bryenton | Developer</title>
-                <metadata name="description" content="Reuban Bryenton is a full-stack software engineer who specializes in building web applications. He is currently studying at Epitech." />
+                <meta name="description" content="Reuban Bryenton is a full-stack software engineer who specializes in building web applications. He is currently studying at Epitech." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-br pt-20 h-screen">
@@ -91,11 +91,15 @@ export default function Home() {
                                             <p>{project.description}</p>
                                             <div className="card-actions justify-end">
                                                 <a href={project.live}>
-                                                    <button className="btn btn-primary">See Project</button>
+                                                    <button className="btn btn-primary">Live Demo</button>
                                                 </a>
-                                                {/* <a href={project.github}>
-                                                    <button className="btn btn-primary">See Project</button>
-                                                </a> */}
+                                                {
+                                                    project.github && (
+                                                        <a href={project.github}>
+                                                            <button className="btn btn-primary">Code</button>
+                                                        </a>
+                                                    )
+                                                }
                                             </div>
                                         </div>
                                     </div>
