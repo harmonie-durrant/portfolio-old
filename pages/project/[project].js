@@ -4,10 +4,9 @@ import useRouter from 'next/router';
 import { getProjectByName } from '../api/projects/[name]';
 import Link from 'next/link';
 
-export default function project() {
+export default function project({ name }) {
     
-    const router = useRouter();
-    const project = getProjectByName(router.query.name);
+    const project = getProjectByName(name);
 
     if(!project) {
         return (<></>)

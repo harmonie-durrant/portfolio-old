@@ -52,7 +52,7 @@ export default function Home() {
                                     <a href='#projects'><button className="btn btn-secondary mr-4">
                                         See projects
                                     </button></a>
-                                    <label for="contact-modal" className="btn btn-secondary mr-4 modal-button">Contact Me</label>
+                                    <label htmlFor="contact-modal" className="btn btn-secondary mr-4 modal-button">Contact Me</label>
                                 </div>
                             </motion.div>
                         </div>
@@ -125,7 +125,7 @@ export default function Home() {
                         </a>
                     </div>
                     <div className="modal-action">
-                        <label for="contact-modal" className="btn">Close</label>
+                        <label htmlFor="contact-modal" className="btn">Close</label>
                     </div>
                 </div>
             </div>
