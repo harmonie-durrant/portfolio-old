@@ -46,27 +46,27 @@ export default function Home() {
                                     Software Engineer
                                 </h2>
                                 <div className="mt-8">
-                                    <a href='#about'><button className="btn btn-secondary mr-4">
+                                    <a href='#about'><button className="btn btn-secondary mr-4 mb-2">
                                         About Me
                                     </button></a>
-                                    <a href='#projects'><button className="btn btn-secondary mr-4">
+                                    <a href='#projects'><button className="btn btn-secondary mr-4 mb-2">
                                         See projects
                                     </button></a>
-                                    <label htmlFor="contact-modal" className="btn btn-secondary mr-4 modal-button">Contact Me</label>
+                                    <label htmlFor="contact-modal" className="btn btn-secondary mr-4 mb-2 modal-button">Contact Me</label>
                                 </div>
                             </motion.div>
                         </div>
                     </div>
+                    <motion.div
+                        initial={{ y: "50vh" }}
+                        animate={{ y: 0 }}
+                        transition={{ duration: 2 }}
+                    >
+                        <a href='#about'>
+                            <ArrowDownward className="text-primary-content text-6xl font-extrabold mb-8" />
+                        </a>
+                    </motion.div>
                 </div>
-                <motion.div
-                    initial={{ y: "50vh" }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 2 }}
-                >
-                    <a href='#about'>
-                        <ArrowDownward className="text-primary-content text-6xl font-extrabold mb-8" />
-                    </a>
-                </motion.div>
             </div>
             <div className="hero bg-base-100 text-base-content">
                 <div className="hero-content flex-col py-16  my-10 text-center h-full">
@@ -114,18 +114,18 @@ export default function Home() {
             <input type="checkbox" id="contact-modal" className="modal-toggle" />
             <div className="modal">
                 <div className="modal-box text-center w-full">
-                    <h3 className="font-bold text-xl">Contact me</h3>
-                    <a className="pt-4" href="mailto:r.bryenton2003@gmail.com"><Email /> r.bryenton2003@gmail.com</a>
-                    <p className="pb-8"><Phone /> +33 (0) 6 15 07 78 59</p>
+                    <h3 className="font-bold text-2xl mb-6">Contact me</h3>
+                    <a className="pb-2" href="mailto:r.bryenton2003@gmail.com"><Email /> r.bryenton2003@gmail.com</a>
+                    <p className="pb-4"><Phone /> +33 (0) 6 15 07 78 59</p>
                     <div className="flex justify-center items-center">
                         <a target="_blank" href="https://github.com/reuban-bryenton" rel="noopener noreferrer">
-                            <GitHub className="h-8 w-auto mx-2" />
+                            <GitHub className="h-8 w-auto mx-4" />
                         </a>
                         <a target="_blank" href="https://www.linkedin.com/in/reuban-bryenton-920724235" rel="noopener noreferrer">
-                            <LinkedIn className="h-8 w-auto mx-2" />
+                            <LinkedIn className="h-8 w-auto mx-4" />
                         </a>
                         <a target="_blank" href="https://links.reubanbryenton.com" rel="noopener noreferrer">
-                            <LinkIcon className="h-8 w-auto mx-2" />
+                            <LinkIcon className="h-8 w-auto mx-4" />
                         </a>
                     </div>
                     <div className="modal-action">

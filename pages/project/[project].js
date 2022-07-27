@@ -16,11 +16,11 @@ export default function project({ name }) {
         <div>
             <Head>
                 <title>Reuban Bryenton | {project.title}</title>
-                <meta name="description" content="I'm Reuban I am studying at Epitech, Toulouse and I do Web/App development and much more..." />
+                <meta name="description" content="Reuban Bryenton is a full-stack software engineer who specializes in building web applications. He is currently studying at Epitech." />
                 <link rel="icon" href="/fav.png" />
             </Head>
             <div className="hero min-h-screen -mt-[4rem]">
-                <div className="hero-overlay"><img className='object-cover opacity-25 h-full w-full' src={project.image} /></div>
+                <div className="hero-overlay"><img className='object-cover opacity-25 h-full w-full' src={project.image} alt='Project Image' /></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
                         <h1 className="mb-5 text-5xl font-bold">{project.title}</h1>
