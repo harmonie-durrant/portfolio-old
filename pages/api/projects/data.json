@@ -13,7 +13,15 @@
         "title": "Ash Smoked Fishes Website",
         "image": "/projectImages/ash-aldeburgh.png",
         "tech": ["NextJS (React)", "MongoDB", "NodeJS (yarn)", "Tailwind (CSS)"],
-        "description": "A site I made a site for my GrandFather using NextJS and Tailwind CSS. It's a site for a fish smoking company.",
+        "description": "I made a site for my GrandFather using NextJS and Tailwind CSS. It's a site for a fish smoking company.",
         "live": "https://www.ashsmokedfishes.co.uk/"
+    },
+    {
+        "name": "chronet-docs",
+        "title": "Chronet Docs",
+        "image": "/projectImages/chronet-docs.png",
+        "tech": ["NextJS (React)", "NodeJS (yarn)", "Markdown (MD/MDX)"],
+        "description": "A site I made for a gaming server that I'm the developer in, it is a docs site with various info about how to play etc...",
+        "live": "https://chronet-docs.vercel.app/"
     }
 ]

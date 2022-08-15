@@ -11,11 +11,8 @@ import data from './api/projects/data.json';
 import Head from 'next/head';
 
 //REACT
-// import { useEffect, useState , useRef } from "react";
+import React from "react";
 
-//THREE/VANTA ANIMATED BG
-// import NET from "vanta/dist/vanta.net.min"
-// import * as THREE from "three"
 
 export default function Home() {
 
@@ -29,7 +26,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-br pt-20 h-screen">
-                <div className="hero-content col-start-1 row-start-1 w-full max-w-7xl flex-col justify-between gap-10 pb-40 desktop:flex-row desktop:items-end tablet:gap-20">
+                <div className="hero-content w-full max-w-7xl flex-col justify-between gap-10 tablet:gap-20">
                     <div className="pl-2 mobile:pl-5 tablet:pl-10 pb-32">
                         <div className="mb-2 py-4 text-center mobile:py-10 tablet:text-left overflow-x-hidden">
                             <motion.div
