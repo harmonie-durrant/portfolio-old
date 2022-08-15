@@ -13,8 +13,21 @@ import Head from 'next/head';
 //REACT
 import React from "react";
 
+//TRANSLATIONS
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from "next-i18next";
 
-export default function Home() {
+export async function getStaticProps({locale}) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ['index', 'common'])),
+        }
+    }
+}
+
+export default function Home(props) {
+
+    const { t } = useTranslation();
 
     const projects = data;
 
@@ -35,12 +48,12 @@ export default function Home() {
                                 transition={{ duration: 1.5 }}
                             >
                                 <h1 className="font-title mb-2 text-4xl font-extrabold mobile:text-5xl tablet:text-7xl">
-                                    Reuban Bryenton
+                                    Reuban Bryenton {props.locale}
                                 </h1>
                                 <h2 className="font-title text-lg font-extrabold mobile:text-xl tablet:text-3xl">
-                                    A student at EpiTech, Toulouse
+                                    {t("index:about_short_1")}
                                     <br />
-                                    Software Engineer
+                                    {t("index:about_short_2")}
                                 </h2>
                                 <div className="mt-8">
                                     <a href='#about'><button className="btn btn-secondary mr-4 mb-2">

@@ -12,15 +12,12 @@ import {motion} from 'framer-motion';
 
 //REACT
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
-export default function NavBar() {
-
-    /**
-
-    TODO: add language switcher function
-
-    */
-
+export default function NavBar({ t }) {
+    
+    const router = useRouter();
+    
     const [navDivClassNames, setNavDivClassNames] = useState("sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 text-primary-content");
 
     //every second
@@ -62,7 +59,7 @@ export default function NavBar() {
             <div className='flex-0'>
 
                 {/* THEME SWITCHER */}
-                <ThemeSwitcher />
+                <ThemeSwitcher t={t} />
 
                 {/* LANGUAGE SWITCHER */}
                 <div className="dropdown dropdown-end">
@@ -76,24 +73,45 @@ export default function NavBar() {
                     </svg>
                 </div>
                     <ul tabIndex="0" className="dropdown-content menu p-2 shadow rounded-box w-52 bg-base-200 text-base-content">
-                        <li><button className="flex">
-                            <img loading="lazy" width="20" height="20" alt="English" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1ec-1f1e7.svg" />
-                            <span className="flex flex-1 justify-between">English</span>
-                        </button></li>
-                        <li><button className="flex">
-                            <img loading="lazy" width="20" height="20" alt="Español" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1ea-1f1f8.svg" />
-                            <span className="flex flex-1 justify-between">Español</span>
-                        </button></li>
-                        <li><button className="flex">
-                            <img loading="lazy" width="20" height="20" alt="Français" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Twemoji_1f1eb-1f1f7.svg/512px-Twemoji_1f1eb-1f1f7.svg.png" />
-                            <span className="flex flex-1 justify-between">Français</span>
-                        </button></li>
+                        <li>
+                            <button
+                                className="flex"
+                                onClick={() => {
+                                    router.push('/en');
+                                }}
+                            >
+                                <img loading="lazy" width="20" height="20" alt="English" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1ec-1f1e7.svg" />
+                                <span className="flex flex-1 justify-between">English</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                className="flex"
+                                onClick={() => {
+                                    router.push('/es');
+                                }}
+                            >
+                                <img loading="lazy" width="20" height="20" alt="Español" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1ea-1f1f8.svg" />
+                                <span className="flex flex-1 justify-between">Español</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                className="flex"
+                                onClick={() => {
+                                    router.push('/fr');
+                                }}
+                            >
+                                <img loading="lazy" width="20" height="20" alt="Français" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Twemoji_1f1eb-1f1f7.svg/512px-Twemoji_1f1eb-1f1f7.svg.png" />
+                                <span className="flex flex-1 justify-between">Français</span>
+                            </button>
+                        </li>
                     </ul>
                 </div>
 
                 {/* DOWNLOAD CV */}
                 <a target="_blank" href="/downloads/cv.pdf" rel="noopener noreferrer">
-                    <button className="hidden tablet:inline-flex btn btn-ghost m-1">Download CV</button>
+                    <button className="hidden tablet:inline-flex btn btn-ghost m-1">{t("common:download_cv")}</button>
                 </a>
 
                 {/* GITHUB */}
