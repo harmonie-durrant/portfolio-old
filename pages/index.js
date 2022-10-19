@@ -57,12 +57,14 @@ export default function Home(props) {
                                 </h2>
                                 <div className="mt-8">
                                     <a href='#about'><button className="btn btn-secondary mr-4 mb-2">
-                                        About Me
+                                        {t("common:about_me")}
                                     </button></a>
                                     <a href='#projects'><button className="btn btn-secondary mr-4 mb-2">
-                                        See projects
+                                        {t("common:see_projects")}
                                     </button></a>
-                                    <label htmlFor="contact-modal" className="btn btn-secondary mr-4 mb-2 modal-button">Contact Me</label>
+                                    <label htmlFor="contact-modal" className="btn btn-secondary mr-4 mb-2 modal-button">
+                                        {t("common:contact_me")}
+                                    </label>
                                 </div>
                             </motion.div>
                         </div>
@@ -81,10 +83,18 @@ export default function Home(props) {
             <div className="hero bg-base-100 text-base-content">
                 <div className="hero-content flex-col py-16  my-10 text-center h-full">
                     <div id='about' className="w-full maw-w-[1000px] flex flex-col text-left">
-                        <h2 className="mb-5 text-4xl tablet:text-5xl font-extrabold">ABOUT ME</h2>
-                        <p className="mb-5 text-2xl tablet:text-3xl font-semibold">Born in Ipswich, England. I grew up in the UK, then <strong>moved to France when I was 13</strong> and became interested in tech.</p>
-                        <p className="mb-5 text-2xl tablet:text-3xl font-semibold">Currently studying at <strong>Epitech, Toulouse</strong></p>
-                        <p className="mb-5 text-2xl tablet:text-3xl font-semibold">Aside from coding I enjoy <strong>making / taking apart PCs</strong> and <strong>building houses minecraft.</strong></p>
+                        <h2 className="mb-5 text-4xl tablet:text-5xl font-extrabold capitalize">
+                            {t("common:about_me")}
+                        </h2>
+                        <p className="mb-5 text-2xl tablet:text-3xl font-semibold">
+                            {t("common:about_1")}
+                        </p>
+                        <p className="mb-5 text-2xl tablet:text-3xl font-semibold">
+                            {t("common:about_2")}
+                        </p>
+                        <p className="mb-5 text-2xl tablet:text-3xl font-semibold">
+                            {t("common:about_3")}
+                        </p>
                     </div>
                 </div>
             </div>
