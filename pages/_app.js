@@ -41,6 +41,7 @@ function MyApp({ Component, pageProps }) {
             <Head>
                 {/* Manifest Link */}
                 <link rel="manifest" href="/manifest.json" />
+                <link rel="icon" href="favicon.ico" />
             </Head>
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div id="content" className='drawer-content scroll-smooth scroll-pt-20'>
