@@ -41,7 +41,7 @@ export default function Home(props) {
             <div className="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-br pt-20 h-screen">
                 <div className="hero-content w-full max-w-7xl flex-col justify-between gap-10 tablet:gap-20">
                     <div className="pl-2 mobile:pl-5 tablet:pl-10 pb-32">
-                        <div className="mb-2 py-4 text-center mobile:py-10 tablet:text-left overflow-x-hidden">
+                        <div className="mb-2 py-4 text-center mobile:py-10 tablet:text-left">
                             <motion.div
                                 initial={{ x: "-100vw" }}
                                 animate={{ x: 0 }}

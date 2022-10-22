@@ -7,3 +7,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.btn {
+    @apply transition;
+    @apply ease-in-out;
+    @apply hover:scale-105;
+}
+
+.btn-anim {
+    @apply transition;
+    @apply ease-in-out;
+    @apply hover:scale-105;
+}
