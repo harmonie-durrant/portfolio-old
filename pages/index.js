@@ -38,9 +38,9 @@ export default function Home(props) {
                 <meta name="description" content="Reuban Bryenton is a full-stack software engineer who specializes in building web applications. He is currently studying at Epitech." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-br pt-20 h-screen">
-                <div className="hero-content w-full max-w-7xl flex-col justify-between gap-10 tablet:gap-20">
-                    <div className="pl-2 mobile:pl-5 tablet:pl-10 pb-32">
+            <div className="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-center bg-gradient-to-br pt-20 h-screen overflow-y-hidden">
+                <div className="hero-content w-full mobile:max-w-7xl flex-col justify-between gap-y-10 tablet:gap-20">
+                    <div className="pl-0 mobile:pl-5 tablet:pl-10 pb-32">
                         <div className="mb-2 py-4 text-center mobile:py-10 tablet:text-left">
                             <motion.div
                                 initial={{ x: "-100vw" }}
@@ -50,12 +50,12 @@ export default function Home(props) {
                                 <h1 className="font-title mb-2 text-4xl font-extrabold mobile:text-5xl tablet:text-7xl">
                                     Reuban Bryenton {props.locale}
                                 </h1>
-                                <h2 className="font-title text-lg font-extrabold mobile:text-xl tablet:text-3xl">
+                                <h2 className="font-title text-lg font-extrabold mobile:text-xl tablet:text-2xl">
                                     {t("index:about_short_1")}
                                     <br />
                                     {t("index:about_short_2")}
                                 </h2>
-                                <div className="mt-8">
+                                <div className="mt-8 flex-row mobile:block">
                                     <a href='#about'><button className="btn btn-secondary mr-4 mb-2">
                                         {t("common:about_me")}
                                     </button></a>
@@ -75,7 +75,7 @@ export default function Home(props) {
                         transition={{ duration: 2 }}
                     >
                         <a href='#about'>
-                            <ArrowDownward className="text-primary-content text-6xl font-extrabold mb-8" />
+                            <ArrowDownward className="text-primary-content text-4xl tablet:text-6xl font-extrabold mb-8" />
                         </a>
                     </motion.div>
                 </div>
@@ -99,7 +99,8 @@ export default function Home(props) {
                 </div>
             </div>
             <div className="bg-base-200 text-base-content py-16 flex flex-col justify-center items-center">
-                    <div id='projects' className="max-w-[80%] tablet:max-w-[1240px] grid gap-4 tablet:gap-10 grid-cols-1 tablet:grid-cols-2">
+                    <h3 className="text-6xl font-bold mb-14">My Projects</h3>
+                    <div id='projects' className="max-w-[90%] tablet:max-w-[1240px] mx-0 tablet:mx8 grid gap-4 tablet:gap-10 grid-cols-1 tablet:grid-cols-2">
                         {
                             projects.map((project, index) => {
                                 return(

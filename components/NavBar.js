@@ -40,7 +40,7 @@ export default function NavBar({ t }) {
             transition={{ duration: 2.5 }}
             className={navDivClassNames}
         >
-            <nav className="navbar w-full">
+            <nav className="navbar w-full overflow-visible overflow-x-clip">
                 <div className='flex flex-1 gap-1 tablet:gap-2'>
                     <span className="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]" data-tip="Menu">
                         <label htmlFor="my-drawer" className="btn btn-square btn-ghost drawer-button ">

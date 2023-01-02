@@ -61,7 +61,9 @@ function MyApp({ Component, pageProps }) {
                     <div className='w-full flex flex-col justify-center items-center mb-8'>
                         <div className="avatar mb-4">
                             <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                <img src="/pics/reuban.png" alt='Reuban Bryenton Picture' />
+                                <label htmlFor="my-drawer" className="w-full h-fullbtn btn-ghost drawer-button ">
+                                        <img htmlFor="my-drawer" className='-mt-6' src="/pics/reuban.png" alt='Reuban Bryenton Picture' />
+                                </label>
                             </div>
                         </div>
                         <p className='font-title text-3xl font-bold'>
