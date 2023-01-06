@@ -20,7 +20,7 @@
         "name": "whitewater",
         "title": "Whitewater Website (Gaming Server)",
         "image": "/projectImages/whitewater.png",
-        "tech": ["NextJS (React)", "NodeJS (yarn)", "Markdown (MD/MDX)"],
+        "tech": ["NextJS (React)", "NodeJS (yarn)", "Tailwind (CSS)"],
         "description": "A site I made for a gaming server that I'm the developer in, it is a site with links to a docs site I made and to other things like social links and a forums part of the site.",
         "live": "https://whitewaterservers.com/"
     },
@@ -30,6 +30,14 @@
         "image": "/projectImages/my_hunter.png",
         "tech": ["C", "CSFML", "Makefile"],
         "description": "A first year project at Epitech Technology. The task was to recreate the game Duck Hunt using the CSFML library for C.",
-        "live": "https://whitewaterservers.com/"
+        "live": "https://reubanbryenton.com/"
+    },
+    {
+        "name": "linktree",
+        "title": "My Linktree",
+        "image": "/projectImages/linktree.png",
+        "tech": ["NextJS (React)", "NodeJS (npm)", "ThreeJS"],
+        "description": "A site I made to share with people so they can see all of my most imortant links in one place..",
+        "live": "https://links.reubanbryenton.com/"
     }
 ]
