@@ -105,25 +105,25 @@ export default function Home(props) {
                             projects.map((project, index) => {
                                 return(
                                     <>
-                                    <div className="card bg-base-100 shadow-xl">
-                                        <figure><img src={project.image} alt={project.name} /></figure>
-                                        <div className="card-body">
-                                            <h2 className="card-title">{project.title}</h2>
-                                            <p>{project.description}</p>
-                                            <div className="card-actions justify-end">
-                                                <a href={project.live}>
-                                                    <button className="btn btn-primary">Live Demo</button>
-                                                </a>
-                                                {
-                                                    project.github && (
-                                                        <a href={project.github}>
-                                                            <button className="btn btn-primary">Code</button>
-                                                        </a>
-                                                    )
-                                                }
+                                        <div className="card bg-base-100 hover:bg-base-300 shadow-xl">
+                                            <figure><img src={project.image} alt={project.name} /></figure>
+                                            <div className="card-body">
+                                                <h2 className="card-title">{project.title}</h2>
+                                                <p>{project.description}</p>
+                                                <div className="card-actions justify-end">
+                                                    <a href={project.live}>
+                                                        <button className="btn btn-primary">Live Demo</button>
+                                                    </a>
+                                                    {
+                                                        project.github && (
+                                                            <a href={project.github}>
+                                                                <button className="btn btn-primary">Code</button>
+                                                            </a>
+                                                        )
+                                                    }
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                 </>
                             )
                         })

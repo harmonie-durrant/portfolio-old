@@ -6,7 +6,17 @@
         "tech": ["Pygame (Python)", "Unity (c#)"],
         "description": "A game made in pygame, and then again in Unity. A game to click circles. Don't press the red one, run the timed trials and see how many you can click in the time frame!",
         "github": "https://github.com/reuban-bryenton/clickn-circles",
-        "live": "https://play.google.com/store/apps/details?id=com.ReubanBryenton.ClicknCircles"
+        "live": "https://play.google.com/store/apps/details?id=com.ReubanBryenton.ClicknCircles",
+        "links": [
+            {
+                "name": "Download (Google Play)",
+                "url": "https://play.google.com/store/apps/details?id=com.ReubanBryenton.ClicknCircles"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/reuban-bryenton/clickn-circles"
+            }
+        ]
     },
     {
         "name": "ash-aldeburgh",
@@ -14,7 +24,13 @@
         "image": "/projectImages/ash-aldeburgh.png",
         "tech": ["NextJS (React)", "MongoDB", "NodeJS (yarn)", "Tailwind (CSS)"],
         "description": "I made a site for my GrandFather using NextJS and Tailwind CSS. It's a site for a fish smoking company.",
-        "live": "https://www.ashsmokedfishes.co.uk/"
+        "live": "https://www.ashsmokedfishes.co.uk/",
+        "links": [
+            {
+                "name": "Live Demo",
+                "url": "https://www.ashsmokedfishes.co.uk/"
+            }
+        ]
     },
     {
         "name": "whitewater",
@@ -22,7 +38,13 @@
         "image": "/projectImages/whitewater.png",
         "tech": ["NextJS (React)", "NodeJS (yarn)", "Tailwind (CSS)"],
         "description": "A site I made for a gaming server that I'm the developer in, it is a site with links to a docs site I made and to other things like social links and a forums part of the site.",
-        "live": "https://whitewaterservers.com/"
+        "live": "https://whitewaterservers.com/",
+        "links": [
+            {
+                "name": "Live Demo",
+                "url": "https://whitewaterservers.com/"
+            }
+        ]
     },
     {
         "name": "myhunter",
@@ -30,7 +52,13 @@
         "image": "/projectImages/my_hunter.png",
         "tech": ["C", "CSFML", "Makefile"],
         "description": "A first year project at Epitech Technology. The task was to recreate the game Duck Hunt using the CSFML library for C.",
-        "live": "https://reubanbryenton.com/"
+        "live": "https://reubanbryenton.com/",
+        "links": [
+            {
+                "name": "Live Demo (SOON)",
+                "url": "https://reubanbryenton.com/"
+            }
+        ]
     },
     {
         "name": "linktree",
@@ -38,6 +66,12 @@
         "image": "/projectImages/linktree.png",
         "tech": ["NextJS (React)", "NodeJS (npm)", "ThreeJS"],
         "description": "A site I made to share with people so they can see all of my most imortant links in one place..",
-        "live": "https://links.reubanbryenton.com/"
+        "live": "https://links.reubanbryenton.com/",
+        "links": [
+            {
+                "name": "Live Demo",
+                "url": "https://links.reubanbryenton.com/"
+            }
+        ]
     }
 ]
