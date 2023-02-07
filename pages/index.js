@@ -74,8 +74,8 @@ export default function Home(props) {
                         animate={{ y: 0 }}
                         transition={{ duration: 2 }}
                     >
-                        <a href='#about'>
-                            <ArrowDownward className="text-primary-content text-4xl tablet:text-6xl font-extrabold mb-8" />
+                        <a href='#about' className="text-primary-content text-4xl tablet:text-8xl font-extrabold mb-8">
+                            <ArrowDownward className="text-primary-content text-4xl tablet:text-8xl font-extrabold mb-8" />
                         </a>
                     </motion.div>
                 </div>

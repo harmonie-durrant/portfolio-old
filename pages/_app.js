@@ -72,8 +72,13 @@ function MyApp({ Component, pageProps }) {
                     </div>
                     {/*  DRAWER CONTENT */}
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>                
-                    <div className="flex justify-center items-center mt-12">
+                    <li><a href="#projects">Projects</a></li>
+                    <div className="flex justify-center items-center mt-4">
+                        <a target="_blank" href="/downloads/cv.pdf" rel="noopener noreferrer">
+                            <button className="inline-flex btn btn-ghost m-1">{t("common:download_cv")}</button>
+                        </a>
+                    </div>
+                    <div className="flex justify-center items-center mt-4">
                         <a target="_blank" href="https://github.com/reuban-bryenton" rel="noopener noreferrer">
                             <GitHub className="h-8 w-auto mx-2" />
                         </a>
