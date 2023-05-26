@@ -105,7 +105,7 @@ export default function Home(props) {
                     {
                         projects.map((project, index) => {
                             return(
-                                <ProjectCard project={project} />
+                                <ProjectCard key={index} project={project} />
                             )
                         })
                     }
