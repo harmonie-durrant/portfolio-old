@@ -1,12 +1,87 @@
 [
     {
+        "name": "corewar",
+        "title": "Corewar - Epitech",
+        "image": "/projectImages/corewar.png",
+        "tech": ["C", "CSFML", "Makefile", "Doxygen", "Python"],
+        "description": "The goal of this project was to recreate the game Core War, and as a bonus we could make a graphical interface. Core War is a game in which two or more battle programs (called 'warriors') compete for control of a virtual computer's memory. These battle programs are written in an abstract assembly language (.s).",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/reuban-bryenton/corewar"
+            }
+        ]
+    },
+    {
+        "name": "epytodo",
+        "title": "Epytodo - Epitech",
+        "image": "/projectImages/epytodo.png",
+        "tech": ["ExpressJS", "JWT", "Bcrypt", "MYSQL", "React"],
+        "description": "An introductory project to back-end development. The goal was to make an API backend that could handle user authentication with JWT and interactions with an SQL database. In this project we also made a small front-end.",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/reuban-bryenton/epytodo-reuban"
+            }
+        ]
+    },
+    {
+        "name": "my-rpg",
+        "title": "My RPG - Epitech",
+        "image": "/projectImages/my-rpg.png",
+        "tech": ["C", "CSFML", "Makefile"],
+        "description": "In this project we were tasked to create a 2D video game in the 'rpg' or Role Playing Game style. We built our own ECS (Entity Component System) inspired by unity game engine to create our own physics, collisions, objects and scenes.",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/reuban-bryenton/myrpg"
+            }
+        ]
+    },
+    {
+        "name": "sudo-quest",
+        "title": "Sudo Quest - Global Game Jam 2023",
+        "image": "/projectImages/sudo-quest.png",
+        "tech": ["Pygame (Python)", "Unity (c#)"],
+        "description": "A game made in Unity during the Global Game Jam 2023! The player must explore the files of a computer through several levels in the form of a runner in order to recover various items that can help him access the 'Root'.",
+        "links": [
+            {
+                "name": "Itch.io",
+                "url": "https://reuban-bryenton.itch.io/sudo-quest"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/reuban-bryenton/SudoQuest-GGJ2023"
+            }
+        ]
+    },
+    {
+        "name": "myhunter",
+        "title": "My Hunter - Epitech",
+        "image": "/projectImages/my_hunter.png",
+        "tech": ["C", "CSFML", "Makefile"],
+        "description": "A first year project at Epitech Technology. The task was to recreate the game Duck Hunt using the CSFML library for C.",
+        "links": []
+    },
+    {
+        "name": "linktree",
+        "title": "My Linktree",
+        "image": "/projectImages/linktree.png",
+        "tech": ["NextJS (React)", "NodeJS (npm)", "ThreeJS"],
+        "description": "A site I made to share with people so they can see all of my most imortant links in one place..",
+        "links": [
+            {
+                "name": "Visit Site",
+                "url": "https://links.reubanbryenton.com/"
+            }
+        ]
+    },
+    {
         "name": "clickn-circles",
         "title": "Clickn' Circles",
         "image": "/projectImages/clickn-circles.jpg",
         "tech": ["Pygame (Python)", "Unity (c#)"],
         "description": "A game made in pygame, and then again in Unity. A game to click circles. Don't press the red one, run the timed trials and see how many you can click in the time frame!",
-        "github": "https://github.com/reuban-bryenton/clickn-circles",
-        "live": "https://play.google.com/store/apps/details?id=com.ReubanBryenton.ClicknCircles",
         "links": [
             {
                 "name": "Download (Google Play)",
@@ -19,58 +94,28 @@
         ]
     },
     {
-        "name": "ash-aldeburgh",
-        "title": "Ash Smoked Fishes Website",
-        "image": "/projectImages/ash-aldeburgh.png",
-        "tech": ["NextJS (React)", "MongoDB", "NodeJS (yarn)", "Tailwind (CSS)"],
-        "description": "I made a site for my GrandFather using NextJS and Tailwind CSS. It's a site for a fish smoking company.",
-        "live": "https://www.ashsmokedfishes.co.uk/",
-        "links": [
-            {
-                "name": "Live Demo",
-                "url": "https://www.ashsmokedfishes.co.uk/"
-            }
-        ]
-    },
-    {
         "name": "whitewater",
         "title": "Whitewater Website (Gaming Server)",
         "image": "/projectImages/whitewater.png",
         "tech": ["NextJS (React)", "NodeJS (yarn)", "Tailwind (CSS)"],
         "description": "A site I made for a gaming server that I'm the developer in, it is a site with links to a docs site I made and to other things like social links and a forums part of the site.",
-        "live": "https://whitewaterservers.com/",
         "links": [
             {
-                "name": "Live Demo",
+                "name": "Visit Site",
                 "url": "https://whitewaterservers.com/"
             }
         ]
     },
     {
-        "name": "myhunter",
-        "title": "My Hunter - Epitech",
-        "image": "/projectImages/my_hunter.png",
-        "tech": ["C", "CSFML", "Makefile"],
-        "description": "A first year project at Epitech Technology. The task was to recreate the game Duck Hunt using the CSFML library for C.",
-        "live": "https://reubanbryenton.com/",
+        "name": "ash-aldeburgh",
+        "title": "Ash Smoked Fishes Website",
+        "image": "/projectImages/ash-aldeburgh.png",
+        "tech": ["NextJS (React)", "MongoDB", "NodeJS (yarn)", "Tailwind (CSS)"],
+        "description": "I made a site for my GrandFather using NextJS and Tailwind CSS. It's a site for a fish smoking company.",
         "links": [
             {
-                "name": "Live Demo (SOON)",
-                "url": "https://reubanbryenton.com/"
-            }
-        ]
-    },
-    {
-        "name": "linktree",
-        "title": "My Linktree",
-        "image": "/projectImages/linktree.png",
-        "tech": ["NextJS (React)", "NodeJS (npm)", "ThreeJS"],
-        "description": "A site I made to share with people so they can see all of my most imortant links in one place..",
-        "live": "https://links.reubanbryenton.com/",
-        "links": [
-            {
-                "name": "Live Demo",
-                "url": "https://links.reubanbryenton.com/"
+                "name": "Visit Site",
+                "url": "https://www.ashsmokedfishes.co.uk/"
             }
         ]
     }

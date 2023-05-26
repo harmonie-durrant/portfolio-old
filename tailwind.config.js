@@ -7,12 +7,7 @@ module.exports = {
         screens: {
             'mobile': '375px',
             'tablet': '768px',
-            'desktop': '1024px',
-        },
-        extend: {
-            backgroundImage: {
-                'arch': 'url("https://placeimg.com/1000/800/arch")',
-            }
+            'desktop': '1224px',
         },
     },
     plugins: [

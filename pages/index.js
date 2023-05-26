@@ -16,6 +16,7 @@ import React from "react";
 //TRANSLATIONS
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from "next-i18next";
+import ProjectCard from "../components/ProjectCard";
 
 export async function getStaticProps({locale}) {
     return {
@@ -99,32 +100,12 @@ export default function Home(props) {
                 </div>
             </div>
             <div className="bg-base-200 text-base-content py-16 flex flex-col justify-center items-center">
-                    <h3 className="text-6xl font-bold mb-14">My Projects</h3>
-                    <div id='projects' className="max-w-[90%] tablet:max-w-[1240px] mx-0 tablet:mx8 grid gap-4 tablet:gap-10 grid-cols-1 tablet:grid-cols-2">
-                        {
-                            projects.map((project, index) => {
-                                return(
-                                    <>
-                                        <div className="card bg-base-100 hover:bg-base-300 shadow-xl">
-                                            <figure><img src={project.image} alt={project.name} /></figure>
-                                            <div className="card-body">
-                                                <h2 className="card-title">{project.title}</h2>
-                                                <p>{project.description}</p>
-                                                <div className="card-actions justify-end">
-                                                    <a href={project.live}>
-                                                        <button className="btn btn-primary">Live Demo</button>
-                                                    </a>
-                                                    {
-                                                        project.github && (
-                                                            <a href={project.github}>
-                                                                <button className="btn btn-primary">Code</button>
-                                                            </a>
-                                                        )
-                                                    }
-                                                </div>
-                                            </div>
-                                        </div>
-                                </>
+                <h3 className="text-6xl font-bold mb-14">My Projects</h3>
+                <div id='projects' className="max-w-[90%] tablet:max-w-[1440px] mx-0 tablet:mx8 grid gap-4 tablet:gap-10 grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3">
+                    {
+                        projects.map((project, index) => {
+                            return(
+                                <ProjectCard project={project} />
                             )
                         })
                     }
