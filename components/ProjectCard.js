@@ -12,7 +12,7 @@ function ProjectCard({ project }) {
                         {
                             project.links.map((data, id) => {
                                 return (
-                                    <a key={index} href={data.url}>
+                                    <a key={id} href={data.url}>
                                         <button className="btn btn-primary">{data.name}</button>
                                     </a>
                                 )
