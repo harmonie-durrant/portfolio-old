@@ -53,7 +53,7 @@ export default function NavBar({ t }) {
                     {/* TODO: ADD NAME (h1 or p) */}
                     <Link href="/">
                         <button className="font-title text-3xl font-bold btn-anim tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]" data-tip="Title">
-                            Reuban
+                            Harmonie
                         </button>
                     </Link>
                 </div>
@@ -120,7 +120,7 @@ export default function NavBar({ t }) {
                     {/* GITHUB */}
                     <a
                         target="_blank"
-                        href="https://github.com/reuban-bryenton"
+                        href="https://github.com/harmonie-durrant"
                         className="hidden mobile:inline-flex btn btn-ghost gap-1 normal-case transition ease-in-out hover:scale-105 tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]"
                         data-tip="GitHub"
                         rel="noopener noreferrer"

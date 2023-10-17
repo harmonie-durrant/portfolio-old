@@ -35,8 +35,8 @@ export default function Home(props) {
     return (
         <>
             <Head>
-                <title>Reuban Bryenton | Developer</title>
-                <meta name="description" content="Reuban Bryenton is a full-stack software engineer who specializes in building web applications. He is currently studying at Epitech." />
+                <title>Harmonie Durrant | Développeuse</title>
+                <meta name="description" content="Harmonie Durrant is a full-stack software engineer who specializes in building web applications. She is currently studying at 42." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-center bg-gradient-to-br pt-20 h-screen overflow-y-hidden">
@@ -49,7 +49,7 @@ export default function Home(props) {
                                 transition={{ duration: 1.5 }}
                             >
                                 <h1 className="font-title mb-2 text-4xl font-extrabold mobile:text-5xl tablet:text-7xl">
-                                    Reuban Bryenton {props.locale}
+                                    Harmonie Durrant {props.locale}
                                 </h1>
                                 <h2 className="font-title text-lg font-extrabold mobile:text-xl tablet:text-2xl">
                                     {t("index:about_short_1")}
@@ -90,9 +90,9 @@ export default function Home(props) {
                         <p className="mb-5 text-2xl tablet:text-3xl font-semibold">
                             {t("common:about_1")}
                         </p>
-                        <p className="mb-5 text-2xl tablet:text-3xl font-semibold">
+                        {/* <p className="mb-5 text-2xl tablet:text-3xl font-semibold">
                             {t("common:about_2")}
-                        </p>
+                        </p> */}
                         <p className="mb-5 text-2xl tablet:text-3xl font-semibold">
                             {t("common:about_3")}
                         </p>
@@ -117,16 +117,16 @@ export default function Home(props) {
             <div className="modal">
                 <div className="modal-box text-center w-full">
                     <h3 className="font-bold text-2xl mb-6">Contact me</h3>
-                    <a className="pb-2" href="mailto:r.bryenton2003@gmail.com"><Email /> r.bryenton2003@gmail.com</a>
+                    <a className="pb-2" href="mailto:h.bryenton2003@gmail.com"><Email /> h.bryenton2003@gmail.com</a>
                     <p className="pb-4"><Phone /> +33 (0) 6 15 07 78 59</p>
                     <div className="flex justify-center items-center">
-                        <a target="_blank" href="https://github.com/reuban-bryenton" rel="noopener noreferrer">
+                        <a target="_blank" href="https://github.com/harmonie-durrant" rel="noopener noreferrer">
                             <GitHub className="h-8 w-auto mx-4" />
                         </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/reuban-bryenton-920724235" rel="noopener noreferrer">
+                        <a target="_blank" href="https://www.linkedin.com/in/harmonie-durrant" rel="noopener noreferrer">
                             <LinkedIn className="h-8 w-auto mx-4" />
                         </a>
-                        <a target="_blank" href="https://links.reubanbryenton.com" rel="noopener noreferrer">
+                        <a target="_blank" href="https://links.harmoniedurrant.com" rel="noopener noreferrer">
                             <LinkIcon className="h-8 w-auto mx-4" />
                         </a>
                     </div>

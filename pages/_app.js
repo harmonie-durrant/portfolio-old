@@ -62,30 +62,30 @@ function MyApp({ Component, pageProps }) {
                         <div className="avatar mb-4">
                             <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                 <label htmlFor="my-drawer" className="w-full h-fullbtn btn-ghost drawer-button ">
-                                        <img htmlFor="my-drawer" className='-mt-6' src="/pics/reuban.png" alt='Reuban Bryenton Picture' />
+                                        <img htmlFor="my-drawer" className='-mt-6' src="/pics/harmonie.jpg" alt='My Picture' />
                                 </label>
                             </div>
                         </div>
                         <p className='font-title text-3xl font-bold'>
-                            Reuban Bryenton
+                            Harmonie Durrant
                         </p>
                     </div>
                     {/*  DRAWER CONTENT */}
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <div className="flex justify-center items-center mt-4">
-                        <a target="_blank" href="/downloads/cv.pdf" rel="noopener noreferrer">
+                        <a target="_blank" href="https://www.canva.com/design/DAFWi_B3TvQ/1AS91jxW2XDn_YbECU8CyA/edit?utm_content=DAFWi_B3TvQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" rel="noopener noreferrer">
                             <button className="inline-flex btn btn-ghost m-1">{t("common:download_cv")}</button>
                         </a>
                     </div>
                     <div className="flex justify-center items-center mt-4">
-                        <a target="_blank" href="https://github.com/reuban-bryenton" rel="noopener noreferrer">
+                        <a target="_blank" href="https://github.com/harmonie-durrant" rel="noopener noreferrer">
                             <GitHub className="h-8 w-auto mx-2" />
                         </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/reuban-bryenton-920724235" rel="noopener noreferrer">
+                        <a target="_blank" href="https://www.linkedin.com/in/harmonie-durrant" rel="noopener noreferrer">
                             <LinkedIn className="h-8 w-auto mx-2" />
                         </a>
-                        <a target="_blank" href="https://links.reubanbryenton.com" rel="noopener noreferrer">
+                        <a target="_blank" href="https://links.harmoniedurrant.com" rel="noopener noreferrer">
                             <LinkIcon className="h-8 w-auto mx-2" />
                         </a>
                     </div>
