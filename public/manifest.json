@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Reuban Bryenton",
-    "short_name": "Reuban",
-    "description": "PWA App for Reuban's Portfolio",
+    "name": "Harmonie Durrant",
+    "short_name": "Harmonie",
+    "description": "PWA App for Harmonie's Portfolio",
     "icons": [
         {
             "src": "/icon-192x192.png",
