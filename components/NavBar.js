@@ -113,7 +113,7 @@ export default function NavBar({ t }) {
                     </div>
 
                     {/* DOWNLOAD CV */}
-                    <a target="_blank" href="/downloads/cv.pdf" rel="noopener noreferrer">
+                    <a target="_blank" href="https://www.canva.com/design/DAFWi_B3TvQ/1AS91jxW2XDn_YbECU8CyA/edit?utm_content=DAFWi_B3TvQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" rel="noopener noreferrer">
                         <button className="hidden tablet:inline-flex btn btn-ghost m-1">{t("common:download_cv")}</button>
                     </a>
 

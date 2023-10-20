@@ -1,6 +1,6 @@
 {
-    "name": "reuban-bryenton",
-    "version": "0.1.0",
+    "name": "harmonie-durrant",
+    "version": "1.0.1",
     "private": true,
     "scripts": {
         "dev": "next dev",
