@@ -49,8 +49,6 @@ export default function NavBar({ t }) {
                             </svg>
                         </label>
                     </span>
-
-                    {/* TODO: ADD NAME (h1 or p) */}
                     <Link href="/">
                         <button className="font-title text-3xl font-bold btn-anim tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]" data-tip="Title">
                             Harmonie
@@ -60,8 +58,6 @@ export default function NavBar({ t }) {
 
 
                 <div className='flex-0'>
-
-                    {/* THEME SWITCHER */}
                     <ThemeSwitcher t={t} />
 
                     {/* LANGUAGE SWITCHER */}
@@ -111,13 +107,9 @@ export default function NavBar({ t }) {
                             </li>
                         </ul>
                     </div>
-
-                    {/* DOWNLOAD CV */}
                     <a target="_blank" href="https://www.canva.com/design/DAFWi_B3TvQ/1AS91jxW2XDn_YbECU8CyA/edit?utm_content=DAFWi_B3TvQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" rel="noopener noreferrer">
                         <button className="hidden tablet:inline-flex btn btn-ghost m-1">{t("common:download_cv")}</button>
                     </a>
-
-                    {/* GITHUB */}
                     <a
                         target="_blank"
                         href="https://github.com/harmonie-durrant"

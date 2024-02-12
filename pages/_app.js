@@ -55,9 +55,9 @@ function MyApp({ Component, pageProps }) {
                 </motion.div>
             </div>
             {/* DRAWER */}
-            <div className="drawer-side">
+            <div className="drawer-side z-50">
                 <label htmlFor="my-drawer" className="drawer-overlay"></label>
-                <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+                <ul className="menu h-full p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
                     <div className='w-full flex flex-col justify-center items-center mb-8'>
                         <div className="avatar mb-4">
                             <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">

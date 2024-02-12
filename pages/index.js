@@ -117,7 +117,7 @@ export default function Home(props) {
             <div className="modal">
                 <div className="modal-box text-center w-full">
                     <h3 className="font-bold text-2xl mb-6">Contact me</h3>
-                    <a className="pb-2" href="mailto:h.bryenton2003@gmail.com"><Email /> h.bryenton2003@gmail.com</a>
+                    <a className="pb-2" href="mailto:harmoniedurrant@gmail.com"><Email /> harmoniedurrant@gmail.com</a>
                     <p className="pb-4"><Phone /> +33 (0) 6 15 07 78 59</p>
                     <div className="flex justify-center items-center">
                         <a target="_blank" href="https://github.com/harmonie-durrant" rel="noopener noreferrer">
