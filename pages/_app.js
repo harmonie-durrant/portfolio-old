@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }) {
             {/* DRAWER */}
             <div className="drawer-side z-50">
                 <label htmlFor="my-drawer" className="drawer-overlay"></label>
-                <ul className="menu h-full p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+                <div className="menu h-full p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
                     <div className='w-full flex flex-col justify-center items-center mb-8'>
                         <div className="avatar mb-4">
                             <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -71,8 +71,10 @@ function MyApp({ Component, pageProps }) {
                         </p>
                     </div>
                     {/*  DRAWER CONTENT */}
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
                     <div className="flex justify-center items-center mt-4">
                         <a target="_blank" href="https://www.canva.com/design/DAFWi_B3TvQ/1AS91jxW2XDn_YbECU8CyA/edit?utm_content=DAFWi_B3TvQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" rel="noopener noreferrer">
                             <button className="inline-flex btn btn-ghost m-1">{t("common:download_cv")}</button>
@@ -89,7 +91,7 @@ function MyApp({ Component, pageProps }) {
                             <LinkIcon className="h-8 w-auto mx-2" />
                         </a>
                     </div>
-                </ul>
+                </div>
             </div>
         </div>
     )
