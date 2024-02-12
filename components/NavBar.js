@@ -50,7 +50,7 @@ export default function NavBar({ t }) {
                         </label>
                     </span>
                     <Link href="/">
-                        <button className="font-title text-3xl font-bold btn-anim tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]" data-tip="Title">
+                        <button className="font-title text-3xl font-bold btn-anim tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]" data-tip="Harmonie Durrant">
                             Harmonie
                         </button>
                     </Link>
@@ -73,37 +73,28 @@ export default function NavBar({ t }) {
                         </div>
                         <ul tabIndex="0" className="dropdown-content menu p-2 shadow rounded-box w-52 bg-base-200 text-base-content">
                             <li>
-                                <button
-                                    className="flex"
-                                    onClick={() => {
-                                        router.push('/en');
-                                    }}
-                                >
-                                    <img loading="lazy" width="20" height="20" alt="English" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1ec-1f1e7.svg" />
-                                    <span className="flex flex-1 justify-between">English</span>
-                                </button>
+                                <Link href="/en">
+                                    <button className="flex">
+                                        <img loading="lazy" width="20" height="20" alt="English" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1ec-1f1e7.svg" />
+                                        <span className="flex flex-1 justify-between">English</span>
+                                    </button>
+                                </Link>
                             </li>
                             <li>
-                                <button
-                                    className="flex"
-                                    onClick={() => {
-                                        router.push('/es');
-                                    }}
-                                >
-                                    <img loading="lazy" width="20" height="20" alt="Español" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1ea-1f1f8.svg" />
-                                    <span className="flex flex-1 justify-between">Español</span>
-                                </button>
+                                <Link href="/es">
+                                    <button className="flex">
+                                        <img loading="lazy" width="20" height="20" alt="Español" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1ea-1f1f8.svg" />
+                                        <span className="flex flex-1 justify-between">Español</span>
+                                    </button>
+                                </Link>
                             </li>
                             <li>
-                                <button
-                                    className="flex"
-                                    onClick={() => {
-                                        router.push('/fr');
-                                    }}
-                                >
-                                    <img loading="lazy" width="20" height="20" alt="Français" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Twemoji_1f1eb-1f1f7.svg/512px-Twemoji_1f1eb-1f1f7.svg.png" />
-                                    <span className="flex flex-1 justify-between">Français</span>
-                                </button>
+                                <Link href="/fr">
+                                    <button className="flex">
+                                        <img loading="lazy" width="20" height="20" alt="Français" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Twemoji_1f1eb-1f1f7.svg/512px-Twemoji_1f1eb-1f1f7.svg.png" />
+                                        <span className="flex flex-1 justify-between">Français</span>
+                                    </button>
+                                </Link>
                             </li>
                         </ul>
                     </div>
