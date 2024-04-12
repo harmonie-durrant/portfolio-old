@@ -7,6 +7,8 @@ import {motion} from 'framer-motion';
 //TRANSLATIONS
 import { useTranslation } from "next-i18next";
 
+import Link from 'next/link';
+
 export default function HeroSection({title, about_1, about_2, next_id}) {
     
     const { t } = useTranslation();
@@ -30,12 +32,12 @@ export default function HeroSection({title, about_1, about_2, next_id}) {
                                 {about_2}
                             </h2>
                             <div className="mt-8 flex-row mobile:block">
-                                <a href='/#about'><button className="btn btn-secondary mr-4 mb-2">
+                                <Link href='/#about'><button className="btn btn-secondary mr-4 mb-2">
                                     {t("common:about_me")}
-                                </button></a>
-                                <a href='/#projects'><button className="btn btn-secondary mr-4 mb-2">
+                                </button></Link>
+                                <Link href='/#projects'><button className="btn btn-secondary mr-4 mb-2">
                                     {t("common:see_projects")}
-                                </button></a>
+                                </button></Link>
                                 <label htmlFor="contact-modal" className="btn btn-secondary mr-4 mb-2 modal-button">
                                     {t("common:contact_me")}
                                 </label>
@@ -48,9 +50,9 @@ export default function HeroSection({title, about_1, about_2, next_id}) {
                     animate={{ y: 0 }}
                     transition={{ duration: 2 }}
                 >
-                    <a href={next_id} className="text-primary-content text-4xl tablet:text-8xl font-extrabold mb-8">
+                    <Link href={next_id} className="text-primary-content text-4xl tablet:text-8xl font-extrabold mb-8">
                         <ArrowDownward className="text-primary-content text-4xl tablet:text-8xl font-extrabold mb-8" />
-                    </a>
+                    </Link>
                 </motion.div>
             </div>
         </div>
