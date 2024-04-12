@@ -1,7 +1,7 @@
 import NavBar from '../components/NavBar'
 import '../styles/globals.css'
 import {motion} from 'framer-motion';
-import { useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 
 // MUI
 import { ArrowDownward, Email, GitHub, Link as LinkIcon, LinkedIn, Phone } from "@material-ui/icons";
@@ -13,6 +13,7 @@ import { appWithTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from "next-i18next";
 import Head from 'next/head';
+import Loading from './loading';
 
 export async function getStaticProps({locale}) {
     return {
@@ -51,7 +52,9 @@ function MyApp({ Component, pageProps }) {
                     transition={{ duration: .5 }}
                 >
                     <NavBar t={t} />
-                    <Component {...pageProps} t={t} />
+                    <Suspense fallback={Loading} >
+                        <Component {...pageProps} t={t} />
+                    </Suspense>
                 </motion.div>
             </div>
             {/* DRAWER */}
